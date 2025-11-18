@@ -1,0 +1,119 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+workenv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+
+# Ruff
+.ruff_cache/
+
+# Docs
+site/
+.mkdocs_cache/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+.cache/
+
+# uv
+.uv/
+uv.lock
+
+# Local configuration
+.env
+.env.local
+*.local
+.wrknv/
+wrknv.toml
+
+# Cloned repositories (individual projects)
+provide-foundation/
+provide-testkit/
+pyvider/
+pyvider-cty/
+pyvider-hcl/
+pyvider-rpcplugin/
+pyvider-components/
+flavorpack/
+wrknv/
+plating/
+tofusoup/
+supsrc/
+provide-foundry/
+terraform-provider-pyvider/
+ci-tooling/
+messometer/
+bfiles/
+.claude/*
+plating
+provide-foundation
+provide-foundry
+provide-testkit
+pyvider
+pyvider-components
+pyvider-cty
+pyvider-hcl
+pyvider-rpcplugin
+supsrc
+terraform-provider-pyvider
+tofusoup
+wrknv
+flavorpack
+
+# Provide tooling artifacts
+.provide/foundry/
+
+# Terraform state (sensitive)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl

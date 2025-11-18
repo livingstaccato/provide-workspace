@@ -1,0 +1,15 @@
+# ShellCheck configuration for provide-workspace scripts
+
+# Enable all optional checks
+enable=all
+
+# Disable specific checks that are not relevant or too strict
+
+# SC2312: Consider invoking this command separately to avoid masking its return value
+disable=SC2312
+
+# SC1091: Not following sourced files (we don't source files in these scripts)
+disable=SC1091
+
+# SC2034: Variable appears unused (some variables are used for documentation/clarity)
+disable=SC2034

@@ -1,0 +1,77 @@
+name: Validate Workflow
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+permissions:
+  contents: read
+
+jobs:
+  full-workflow:
+    name: Full Workflow Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install system prerequisites
+        run: |
+          if [ "$RUNNER_OS" == "Linux" ]; then
+            sudo apt-get update
+            sudo apt-get install -y git make
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            brew install git make
+          fi
+        shell: bash
+
+      - name: Install uv
+        run: pip install uv
+        shell: bash
+
+      - name: Run validate.sh to check prerequisites
+        run: bash scripts/validate.sh
+        continue-on-error: true  # May fail due to missing repos
+        shell: bash
+
+      - name: Run pytest integration tests
+        run: |
+          uv pip install --system -e ".[dev]"
+          pytest tests/integration/ -v
+        shell: bash
+
+  workflow-without-uv:
+    name: Workflow Test (without uv)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies with pip
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+        shell: bash
+
+      - name: Run validate.sh
+        run: bash scripts/validate.sh
+        continue-on-error: true
+        shell: bash
+
+      - name: Run unit tests
+        run: pytest tests/unit/ -v
+        shell: bash

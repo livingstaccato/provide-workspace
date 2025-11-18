@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint (shellcheck + ruff + mypy)
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: |
+          if [ "$RUNNER_OS" == "Linux" ]; then
+            sudo apt-get update && sudo apt-get install -y shellcheck
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            brew install shellcheck
+          fi
+        shell: bash
+
+      - name: Run shellcheck on bash scripts
+        run: shellcheck scripts/*.sh
+        shell: bash
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        run: pip install uv
+        shell: bash
+
+      - name: Install dependencies
+        run: |
+          cd $GITHUB_WORKSPACE
+          uv pip install --system -e ".[dev]"
+        shell: bash
+
+      - name: Run ruff format check
+        run: ruff format --check .
+        shell: bash
+
+      - name: Run ruff check
+        run: ruff check .
+        shell: bash
+
+      - name: Run mypy
+        run: mypy tests/
+        continue-on-error: true  # Type stubs may not be available in CI
+        shell: bash
+
+  test:
+    name: Test (pytest)
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        run: pip install uv
+        shell: bash
+
+      - name: Install dependencies
+        run: |
+          cd $GITHUB_WORKSPACE
+          uv pip install --system -e ".[dev]"
+        shell: bash
+
+      - name: Run pytest (unit tests)
+        run: pytest tests/unit/ -v
+        shell: bash
+
+      - name: Run pytest (integration tests)
+        run: pytest tests/integration/ -v -m "not slow"
+        shell: bash

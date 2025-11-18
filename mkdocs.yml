@@ -1,0 +1,87 @@
+# Inherit shared configuration from provide-foundry
+INHERIT: .provide/foundry/base-mkdocs.yml
+
+# Project-Specific Configuration
+site_name: workspace
+site_description: Workspace manager for the provide.io ecosystem - manages all provide-io repositories
+site_author: provide.io
+site_url: https://foundry.provide.io/workspace/
+repo_url: https://github.com/provide-io/provide-workspace
+repo_name: provide-io/provide-workspace
+edit_uri: edit/main/docs/
+copyright: ©2024-2025 provide.io llc<br/>🛠️ with 💚 and 🦝 on 🌎
+
+# Development server configuration
+dev_addr: '127.0.0.1:11012'
+
+# Standalone mode settings
+docs_dir: docs
+
+# Project-specific theme overrides
+theme:
+  font:
+    text: Inter
+    code: Fira Code
+  palette:
+    # Light mode - custom colors for provide-workspace
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode - custom colors for provide-workspace
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+
+  - Getting Started:
+    - getting-started/index.md
+    - Prerequisites: getting-started/prerequisites.md
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quick-start.md
+    - Validation: getting-started/validation.md
+
+  - Architecture:
+    - architecture/index.md
+    - Meta-Repository Pattern: architecture/meta-repository.md
+    - Package Layers: architecture/layers.md
+    - Workspace vs Workenv: architecture/workspace-vs-workenv.md
+    - wrknv Integration: architecture/wrknv-integration.md
+
+  - Scripts Reference:
+    - reference/index.md
+    - bootstrap.sh: reference/bootstrap.md
+    - setup.sh: reference/setup.md
+    - validate.sh: reference/validate.md
+    - Configuration: reference/configuration.md
+
+  - User Guide:
+    - Development Workflow: guide/workflow.md
+    - Cross-Package Development: guide/cross-package.md
+    - Adding Packages: guide/adding-packages.md
+    - Git Workflow: guide/git-workflow.md
+    - Dependency Management: guide/dependencies.md
+
+  - Testing:
+    - testing/index.md
+    - Running Tests: testing/running-tests.md
+    - Test Structure: testing/test-structure.md
+    - CI/CD: testing/ci-cd.md
+
+  - Troubleshooting:
+    - Common Issues: troubleshooting/common.md
+    - Script Errors: troubleshooting/script-errors.md
+    - Environment Issues: troubleshooting/environment.md
+
+  - Reference:
+    - FAQ: reference/faq.md
+    - vs wrknv Tool: reference/vs-wrknv.md
