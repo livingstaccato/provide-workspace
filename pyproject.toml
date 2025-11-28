@@ -75,7 +75,7 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 
 # Test execution
-addopts = "-m 'not integration and not slow' -rFE -q --color=yes"
+addopts = "-m 'not integration and not slow' -rFE -q --color=yes --dist load"
 
 # Pytest markers
 markers = [
