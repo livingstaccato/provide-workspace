@@ -13,17 +13,17 @@ authors = [
     { name = "Provide", email = "support@provide.io" }
 ]
 
-[project.urls]
-Homepage = "https://foundry.provide.io/provide-workspace/"
-Documentation = "https://foundry.provide.io/provide-workspace/"
-Repository = "https://foundry.provide.io/provide-workspace/repo"
-Issues = "https://foundry.provide.io/provide-workspace/issues"
-
 # Optional workspace-level dependencies
 # Individual projects manage their own dependencies
 dependencies = [
     "provide-foundation[all]",
 ]
+
+[project.urls]
+Homepage = "https://foundry.provide.io/provide-workspace/"
+Documentation = "https://foundry.provide.io/provide-workspace/"
+Repository = "https://foundry.provide.io/provide-workspace/repo"
+Issues = "https://foundry.provide.io/provide-workspace/issues"
 
 [dependency-groups]
 dev = [
