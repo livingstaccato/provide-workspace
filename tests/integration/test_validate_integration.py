@@ -39,9 +39,7 @@ def test_validate_script_runs(
 
     # Should check for Python, git, etc
     output = result.stdout + result.stderr
-    assert any(
-        keyword in output.lower() for keyword in ["python", "git", "prerequisite", "checking"]
-    )
+    assert any(keyword in output.lower() for keyword in ["python", "git", "prerequisite", "checking"])
 
 
 def test_validate_all_tests_flag(

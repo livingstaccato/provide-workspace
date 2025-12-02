@@ -95,8 +95,4 @@ def test_scripts_are_idempotent(scripts_dir: Path, isolated_workspace: Path) -> 
     assert result2.returncode in (0, 1)
 
     # Second run should handle existing state gracefully
-    assert (
-        "skip" in result2.stdout.lower()
-        or "exist" in result2.stdout.lower()
-        or result2.returncode == 0
-    )
+    assert "skip" in result2.stdout.lower() or "exist" in result2.stdout.lower() or result2.returncode == 0

@@ -30,9 +30,7 @@ def bootstrap_script(scripts_dir: Path) -> Path:
     return scripts_dir / "bootstrap.sh"
 
 
-def test_bootstrap_help_flag(
-    script_execution_context: ScriptExecutionContext, bootstrap_script: Path
-) -> None:
+def test_bootstrap_help_flag(script_execution_context: ScriptExecutionContext, bootstrap_script: Path) -> None:
     """Test bootstrap.sh with --help flag displays usage."""
     result = script_execution_context.run_script(bootstrap_script, args=["--help"])
 
