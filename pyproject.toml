@@ -13,9 +13,9 @@ authors = [
     { name = "Provide", email = "support@provide.io" }
 ]
 
-# Workspace dependencies - docs deps come through provide-foundry
+# Workspace dependencies - docs deps come through testkit[docs] → foundry
 dependencies = [
-    "provide-foundry",  # Includes all mkdocs deps (material, htmlproofer, etc.)
+    "provide-testkit[docs]",  # Chains to provide-foundry for all mkdocs deps
 ]
 
 [project.urls]
