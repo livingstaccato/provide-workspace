@@ -29,6 +29,8 @@ Issues = "https://foundry.provide.io/provide-workspace/issues"
 
 [dependency-groups]
 dev = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.23",
     "provide-testkit[all]",
 ]
 
