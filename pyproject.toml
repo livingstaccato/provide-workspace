@@ -80,7 +80,8 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 
 # Test execution
-addopts = "-m 'not integration and not slow' -rFE -q --color=yes --dist load"
+addopts = "-m 'not integration and not slow' -rFE -q --color=yes"
+# Parallel execution: pytest -n <workers> (range: 2-16, recommend: CPU cores or 8, max: 16 to avoid xdist hang)
 
 # Pytest markers
 markers = [
