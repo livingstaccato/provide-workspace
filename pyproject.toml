@@ -140,6 +140,9 @@ directory = "htmlcov"
 [tool.coverage.xml]
 output = "coverage.xml"
 
+[tool.bandit]
+exclude_dirs = [".venv", "tests", "workenv"]
+
 [tool.uv.sources]
 provide-testkit = { path = "../provide-testkit", editable = true }
 provide-foundation = { path = "../provide-foundation", editable = true }
