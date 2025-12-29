@@ -129,6 +129,7 @@ parallel = true
 source = ["scripts"]
 
 [tool.coverage.report]
+fail_under = 70
 show_missing = true
 skip_covered = true
 precision = 2
