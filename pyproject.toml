@@ -22,10 +22,8 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 
-# Workspace dependencies - all docs deps come through testkit[docs]
-dependencies = [
-    "provide-testkit[docs]",
-]
+# No runtime dependencies - this is a meta/workspace package
+dependencies = []
 
 [project.urls]
 Homepage = "https://foundry.provide.io/provide-workspace/"
@@ -35,9 +33,12 @@ Issues = "https://foundry.provide.io/provide-workspace/issues"
 
 [dependency-groups]
 dev = [
+    "provide-testkit[all]",
+]
+docs = [
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.7.1",
-    "provide-testkit[all]",
+    "provide-testkit[docs]",
 ]
 
 [tool.setuptools]
