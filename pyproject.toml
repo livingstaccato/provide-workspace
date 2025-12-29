@@ -8,9 +8,18 @@ dynamic = ["version"]
 description = "Development workspace setup for the provide.io ecosystem"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = "MIT"
 authors = [
     { name = "Provide", email = "support@provide.io" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
 ]
 
 # Workspace dependencies - all docs deps come through testkit[docs]
