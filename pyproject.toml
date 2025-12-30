@@ -1,3 +1,9 @@
+#
+# provide-workspace/pyproject.toml
+#
+# Development workspace setup for the provide.io ecosystem
+#
+
 [build-system]
 requires = ["setuptools>=75.0", "wheel"]
 build-backend = "setuptools.build_meta"
