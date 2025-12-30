@@ -12,6 +12,9 @@ license = "MIT"
 authors = [
     { name = "Provide", email = "support@provide.io" }
 ]
+maintainers = [
+    { name = "provide.io", email = "code@provide.io" }
+]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -50,6 +53,7 @@ version = {file = "VERSION"}
 
 [tool.ruff]
 line-length = 111
+indent-width = 4
 target-version = "py311"
 
 [tool.ruff.lint]
@@ -64,6 +68,17 @@ select = [
     "C4",  # flake8-comprehensions
     "SIM", # flake8-simplify
 ]
+
+[tool.ruff.lint.isort]
+known-first-party = ["provide", "tests"]
+force-sort-within-sections = true
+combine-as-imports = true
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
 
 [tool.mypy]
 python_version = "3.11"
