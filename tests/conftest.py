@@ -9,9 +9,10 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
+
 # Ensure provide.testkit is imported early for setproctitle blocker
 import provide.testkit  # noqa: F401
-import pytest
 
 # Import script testing utilities
 from provide.testkit import (

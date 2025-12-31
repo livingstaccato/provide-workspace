@@ -10,6 +10,7 @@ from __future__ import annotations
 from pathlib import Path
 
 import pytest
+
 from provide.testkit import (
     ScriptExecutionContext,
     assert_stdout_contains,
