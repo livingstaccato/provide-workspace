@@ -148,7 +148,7 @@ For comprehensive documentation on the entire ecosystem, visit:
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines and contribution process.
+See [CLAUDE.md](CLAUDE.md) for workspace development guidance, and check each package for its own `CONTRIBUTING.md` when available.
 
 ## License
 
