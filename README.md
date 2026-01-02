@@ -163,4 +163,4 @@ mypy src/
 - Review package-specific CLAUDE.md files for AI-assisted development notes
 - Open an issue in the relevant repository
 
-Copyright (c) Provide.io LLC.
+Copyright (c) provide.io LLC.
