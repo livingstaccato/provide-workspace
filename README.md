@@ -2,6 +2,9 @@
 
 Development workspace setup for the provide.io ecosystem.
 
+## Key Features
+Key features are highlighted in the sections below and in the documentation.
+
 ## Quick Start
 
 ```bash
@@ -18,6 +21,24 @@ cd provide-workspace
 # Validate your setup
 ./scripts/validate.sh
 ```
+
+## Documentation
+
+For comprehensive documentation on the entire ecosystem, visit:
+
+- **Local**: Run `cd provide-foundry && we docs serve` and visit http://localhost:8000
+- **Online**: [provide.io documentation](https://docs.provide.io) (when available)
+
+## Development
+Development notes are in [CLAUDE.md](CLAUDE.md).
+
+## Contributing
+
+See [CLAUDE.md](CLAUDE.md) for workspace development guidance, and check each package for its own `CONTRIBUTING.md` when available.
+
+## License
+
+See individual package repositories for license information.
 
 ## What is provide-workspace?
 
@@ -133,23 +154,8 @@ mypy src/
 - Changes are **NOT** auto-pushed
 - No git rollback capability - be careful with changes
 
-## Documentation
-
-For comprehensive documentation on the entire ecosystem, visit:
-
-- **Local**: Run `cd provide-foundry && we docs serve` and visit http://localhost:8000
-- **Online**: [provide.io documentation](https://docs.provide.io) (when available)
-
 ## Getting Help
 
 - Check the [detailed setup guide](docs/development-setup.md)
 - Review package-specific CLAUDE.md files for AI-assisted development notes
 - Open an issue in the relevant repository
-
-## Contributing
-
-See [CLAUDE.md](CLAUDE.md) for workspace development guidance, and check each package for its own `CONTRIBUTING.md` when available.
-
-## License
-
-See individual package repositories for license information.
