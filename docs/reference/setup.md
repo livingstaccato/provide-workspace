@@ -1,6 +1,6 @@
 # setup.sh Reference
 
-📝 Detailed documentation coming soon.
+This reference is intentionally brief; see the linked guides below.
 
 ## Quick Usage
 

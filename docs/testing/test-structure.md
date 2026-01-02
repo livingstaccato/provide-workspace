@@ -1,6 +1,6 @@
 # Test Structure
 
-📝 Detailed guide coming soon.
+This guide is intentionally brief; see the linked guides below.
 
 ## Standard Structure
 

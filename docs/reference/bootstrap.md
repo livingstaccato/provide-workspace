@@ -1,6 +1,6 @@
 # bootstrap.sh Reference
 
-📝 Detailed documentation coming soon.
+This reference is intentionally brief; see the linked guides below.
 
 ## Quick Usage
 
@@ -21,7 +21,7 @@ Run `./scripts/bootstrap.sh --help` for options.
 3. Clones missing repositories using `gh` or `git`
 4. Skips existing directories (idempotent)
 
-##See Also
+## See Also
 
 - [Installation Guide](../getting-started/installation/)
 - [wrknv Integration](../architecture/wrknv-integration/)

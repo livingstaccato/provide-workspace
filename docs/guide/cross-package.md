@@ -1,6 +1,6 @@
 # Cross-Package Development
 
-📝 Detailed guide coming soon.
+This guide is intentionally brief; see the linked guides below.
 
 ## Quick Example
 
