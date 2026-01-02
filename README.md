@@ -3,7 +3,9 @@
 Development workspace setup for the provide.io ecosystem.
 
 ## Key Features
-Key features are highlighted in the sections below and in the documentation.
+- One-command bootstrap to clone and configure the full ecosystem.
+- Scripts for setup, validation, and common workspace workflows.
+- Centralized docs for workspace conventions and tooling.
 
 ## Quick Start
 
@@ -30,7 +32,8 @@ For comprehensive documentation on the entire ecosystem, visit:
 - **Online**: [provide.io documentation](https://docs.provide.io) (when available)
 
 ## Development
-Development notes are in [CLAUDE.md](CLAUDE.md).
+- See [CLAUDE.md](CLAUDE.md) for local development notes.
+- Run `./scripts/validate.sh` to confirm your environment.
 
 ## Contributing
 
