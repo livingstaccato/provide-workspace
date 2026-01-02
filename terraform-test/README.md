@@ -87,6 +87,7 @@ terraform apply
 
 Example run results (values may vary based on registry state):
 
+<!-- BEGIN TEST RESULTS -->
 - ✓ Module info: Retrieved AWS Security Group module details
 - ✓ Module search: Found 15 Kubernetes-related modules
 - ✓ Module versions: Listed 296 versions of AWS EKS module
@@ -96,6 +97,13 @@ Example run results (values may vary based on registry state):
 - ✓ State info: Parsed dummy state file metadata
 - ✓ State outputs: Extracted 1 filtered output
 - ✓ State resources: Found 1 managed AWS instance resource
+<!-- END TEST RESULTS -->
+
+To refresh this section after running Terraform, use:
+
+```bash
+python scripts/update_readme_results.py
+```
 
 ## Key Features Demonstrated
 
