@@ -229,7 +229,7 @@ pyenv global 3.11.0
 If the uv installation script fails, try the alternative method:
 
 ```bash
-pip install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 Or download pre-built binaries from [uv releases](https://github.com/astral-sh/uv/releases).

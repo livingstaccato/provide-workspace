@@ -145,7 +145,7 @@ Infrastructure
 All packages share a single virtual environment at `provide-workspace/.venv`:
 
 - Located at workspace root
-- Packages installed in editable mode with `pip install -e`
+- Packages installed in editable mode with `uv pip install -e`
 - Changes to any package immediately visible to others
 - Separate from individual project `workenv/` directories
 

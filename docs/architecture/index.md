@@ -15,7 +15,7 @@ provide-workspace uses a **meta-repository pattern** - coordinating multiple ind
 :   provide-workspace coordinates these repositories, providing unified development environment and tooling.
 
 **Editable Installs**
-:   All packages installed in editable mode (`pip install -e`), making changes immediately available across the workspace.
+:   All packages installed in editable mode (`uv pip install -e`), making changes immediately available across the workspace.
 
 **Shared Virtual Environment**
 :   Single `.venv` at workspace root contains all packages, enabling cross-package development.
