@@ -32,12 +32,12 @@ For comprehensive documentation on the entire ecosystem, visit:
 - **Online**: [provide.io documentation](https://docs.provide.io) (when available)
 
 ## Development
-- See [CLAUDE.md](CLAUDE.md) for local development notes.
+- See [CLAUDE.md](https://github.com/provide-io/provide-workspace/blob/main/CLAUDE.md) for local development notes.
 - Run `./scripts/validate.sh` to confirm your environment.
 
 ## Contributing
 
-See [CLAUDE.md](CLAUDE.md) for workspace development guidance, and check each package for its own `CONTRIBUTING.md` when available.
+See [CLAUDE.md](https://github.com/provide-io/provide-workspace/blob/main/CLAUDE.md) for workspace development guidance, and check each package for its own `CONTRIBUTING.md` when available.
 
 ## License
 
@@ -159,6 +159,8 @@ mypy src/
 
 ## Getting Help
 
-- Check the [detailed setup guide](docs/development-setup.md)
+- Check the [detailed setup guide](https://github.com/provide-io/provide-workspace/blob/main/docs/development-setup.md)
 - Review package-specific CLAUDE.md files for AI-assisted development notes
 - Open an issue in the relevant repository
+
+Copyright (c) Provide.io LLC.
