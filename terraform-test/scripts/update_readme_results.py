@@ -19,16 +19,22 @@ def render_results(outputs: dict[str, object]) -> list[str]:
     def val(key: str) -> object:
         return outputs.get(key, {}).get("value")
 
+    def ascii_only(value: object) -> str:
+        if value is None:
+            return "unknown"
+        text = str(value)
+        return text.encode("ascii", "ignore").decode("ascii").strip()
+
     return [
-        f"- ✓ Module info: {val('module_info_description')}",
-        f"- ✓ Module search: Found {val('module_search_count')} kubernetes modules",
-        f"- ✓ Module versions: Listed {val('eks_version_count')} versions of terraform-aws-modules/eks",
-        f"- ✓ Provider info: Latest Google provider {val('google_provider_latest')}",
-        f"- ✓ Provider versions: Listed {val('azurerm_version_count')} versions of hashicorp/azurerm",
-        f"- ✓ Registry search: Found {val('registry_search_results')} networking security results",
-        f"- ✓ State info: Terraform version {val('state_terraform_version')}",
-        f"- ✓ State outputs: Extracted {val('state_outputs_count')} outputs",
-        f"- ✓ State resources: Found {val('state_managed_resources')} managed resources",
+        f"- ✓ Module info: {ascii_only(val('module_info_description'))}",
+        f"- ✓ Module search: Found {ascii_only(val('module_search_count'))} kubernetes modules",
+        f"- ✓ Module versions: Listed {ascii_only(val('eks_version_count'))} versions of terraform-aws-modules/eks",
+        f"- ✓ Provider info: Latest Google provider {ascii_only(val('google_provider_latest'))}",
+        f"- ✓ Provider versions: Listed {ascii_only(val('azurerm_version_count'))} versions of hashicorp/azurerm",
+        f"- ✓ Registry search: Found {ascii_only(val('registry_search_results'))} networking security results",
+        f"- ✓ State info: Terraform version {ascii_only(val('state_terraform_version'))}",
+        f"- ✓ State outputs: Extracted {ascii_only(val('state_outputs_count'))} outputs",
+        f"- ✓ State resources: Found {ascii_only(val('state_managed_resources'))} managed resources",
     ]
 
 

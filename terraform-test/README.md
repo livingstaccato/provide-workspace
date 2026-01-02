@@ -88,15 +88,15 @@ terraform apply
 Example run results (values may vary based on registry state):
 
 <!-- BEGIN TEST RESULTS -->
-- ✓ Module info: Retrieved AWS Security Group module details
-- ✓ Module search: Found 15 Kubernetes-related modules
-- ✓ Module versions: Listed 296 versions of AWS EKS module
-- ✓ Provider info: Got Google Cloud provider v7.11.0
-- ✓ Provider versions: Listed 369 versions of Azure RM provider
+- ✓ Module info: Terraform module to create AWS Security Group resources
+- ✓ Module search: Found 15 kubernetes modules
+- ✓ Module versions: Listed 299 versions of terraform-aws-modules/eks
+- ✓ Provider info: Latest Google provider 7.14.1
+- ✓ Provider versions: Listed 374 versions of hashicorp/azurerm
 - ✓ Registry search: Found 20 networking security results
-- ✓ State info: Parsed dummy state file metadata
-- ✓ State outputs: Extracted 1 filtered output
-- ✓ State resources: Found 1 managed AWS instance resource
+- ✓ State info: Terraform version 1.10.3
+- ✓ State outputs: Extracted 1 outputs
+- ✓ State resources: Found 1 managed resources
 <!-- END TEST RESULTS -->
 
 To refresh this section after running Terraform, use:
