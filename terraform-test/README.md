@@ -85,7 +85,7 @@ terraform apply
 
 ## Test Results
 
-All 9 data sources successfully executed:
+Example run results (values may vary based on registry state):
 
 - ✓ Module info: Retrieved AWS Security Group module details
 - ✓ Module search: Found 15 Kubernetes-related modules
