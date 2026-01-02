@@ -256,12 +256,12 @@ echo "Cloning repositories from wrknv.toml..."
 # setup.sh
 
 # Create venv and install packages
-python3 -m venv .venv
+uv venv
 source .venv/bin/activate
 
 # Install packages in order
-pip install -e ../package-one
-pip install -e ../package-two
+uv pip install -e ../package-one
+uv pip install -e ../package-two
 ```
 
 ## wrknv vs provide-workspace

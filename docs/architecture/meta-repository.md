@@ -44,8 +44,8 @@ provide-workspace/.venv/
 
 **All packages installed with `-e` (editable mode)**:
 ```bash
-pip install -e ../provide-foundation
-pip install -e ../pyvider
+uv pip install -e ../provide-foundation
+uv pip install -e ../pyvider
 # ... etc
 ```
 
@@ -101,7 +101,7 @@ Three scripts coordinate the workspace:
 |--------|-----------------|-------------------|
 | **Setup** | 3 commands | 13+ clone + setup commands |
 | **Consistency** | Enforced | Manual |
-| **Cross-Package Dev** | Seamless editable installs | Manual `pip install -e` everywhere |
+| **Cross-Package Dev** | Seamless editable installs | Manual `uv pip install -e` everywhere |
 | **Documentation** | Integrated | Fragmented across repos |
 | **Onboarding** | Quick, automated | Slow, error-prone |
 
