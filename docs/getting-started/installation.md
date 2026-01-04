@@ -227,7 +227,7 @@ View the complete ecosystem documentation:
 
 ```bash
 cd provide-foundry/
-make docs-serve
+we run docs.serve
 # Visit http://localhost:11000
 ```
 

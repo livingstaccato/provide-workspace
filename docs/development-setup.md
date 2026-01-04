@@ -421,7 +421,7 @@ source .venv/bin/activate
 
 ### Documentation Build Errors
 
-**Problem**: `make docs-build` fails
+**Problem**: `we run docs.build` fails
 
 **Solution**:
 1. Ensure Make is installed
@@ -510,5 +510,5 @@ After setup, you can:
 
 1. Explore the codebase: `cd pyvider && ls -la`
 2. Run tests: `uv run pytest`
-3. Build documentation: `cd provide-foundry && make docs-serve`
+3. Build documentation: `cd provide-foundry && we run docs.serve`
 4. Start developing!
