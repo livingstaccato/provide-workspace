@@ -341,23 +341,23 @@ The unified documentation is built from `provide-foundry`:
 
 ```bash
 cd provide-foundry/
-make docs-build
+we run docs.build
 ```
 
 ### Serving Documentation Locally
 
 ```bash
 cd provide-foundry/
-make docs-serve
+we run docs.serve
 ```
 
-Then visit http://localhost:8000
+Then visit http://localhost:11000
 
 ### Building Individual Package Docs
 
 ```bash
 cd <package-name>/
-make docs-serve
+we run docs.serve
 ```
 
 ### Documentation Structure
