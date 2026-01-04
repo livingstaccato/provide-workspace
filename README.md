@@ -28,8 +28,8 @@ cd provide-workspace
 
 For comprehensive documentation on the entire ecosystem, visit:
 
-- **Local**: Run `cd provide-foundry && we docs serve` and visit http://localhost:8000
-- **Online**: [provide.io documentation](https://docs.provide.io) (when available)
+- **Local**: Run `cd provide-foundry && we run docs.serve` and visit http://localhost:8000
+- **Online**: [provide.io documentation](https://foundry.provide.io)
 
 ## Development
 - See [CLAUDE.md](https://github.com/provide-io/provide-workspace/blob/main/CLAUDE.md) for local development notes.
@@ -112,10 +112,10 @@ cd provide-workspace/
 ```bash
 # Build unified documentation
 cd provide-foundry/
-we docs build
+we run docs.build
 
 # Serve documentation locally
-we docs serve
+we run docs.serve
 ```
 
 ## Common Tasks
