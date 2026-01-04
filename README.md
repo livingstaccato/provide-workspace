@@ -28,7 +28,7 @@ cd provide-workspace
 
 For comprehensive documentation on the entire ecosystem, visit:
 
-- **Local**: Run `cd provide-foundry && we run docs.serve` and visit http://localhost:8000
+- **Local**: Run `cd provide-foundry && we run docs.serve` and visit http://localhost:11000
 - **Online**: [provide.io documentation](https://foundry.provide.io)
 
 ## Development
