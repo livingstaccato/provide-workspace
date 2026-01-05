@@ -130,11 +130,18 @@ Components Layer
 └── pyvider-components # Standard components library
 
 Tools Layer
+├── bfiles             # File bundling utility
+├── ci-tooling         # Shared CI workflows and actions
 ├── flavorpack         # PSPF packaging system
+├── messometer         # Git history consolidation
 ├── wrknv              # Work environment management
 ├── plating            # Documentation generation
 ├── tofusoup           # Conformance testing
 └── supsrc             # Git automation
+
+Providers Layer
+├── terraform-provider-pyvider   # Pyvider Terraform provider
+└── terraform-provider-tofusoup  # TofuSoup Terraform provider
 
 Infrastructure
 └── provide-foundry    # Documentation hub
