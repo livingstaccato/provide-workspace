@@ -257,7 +257,7 @@ uv pip install -e ".[dev]"
 
 **Solution**: Install in editable mode:
 ```bash
-# Instead of: uv uv add .
+# Instead of: uv add .
 uv pip install -e "."  # Note the -e flag
 ```
 
