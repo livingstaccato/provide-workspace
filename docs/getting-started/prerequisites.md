@@ -236,7 +236,7 @@ Or download pre-built binaries from [uv releases](https://github.com/astral-sh/u
 
 ### Permission Errors
 
-If you encounter permission errors during installation, **do not use sudo** with uv or pip. Instead, use user installations:
+If you encounter permission errors during installation, **do not use sudo** with uv. Instead, use user installations:
 
 ```bash
 uv venv  # Creates virtual environment
