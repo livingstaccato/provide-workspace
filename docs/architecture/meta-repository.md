@@ -22,7 +22,7 @@ parent-directory/
 ├── provide-workspace/      # Meta-repository (coordinator)
 ├── provide-foundation/   # Independent repository
 ├── pyvider/              # Independent repository
-└── ... (13+ repos)
+└── ... (19 repos)
 ```
 
 **Why siblings?**
@@ -99,7 +99,7 @@ Three scripts coordinate the workspace:
 
 | Aspect | Meta-Repository | Individual Clones |
 |--------|-----------------|-------------------|
-| **Setup** | 3 commands | 13+ clone + setup commands |
+| **Setup** | 3 commands | 19 clone + setup commands |
 | **Consistency** | Enforced | Manual |
 | **Cross-Package Dev** | Seamless editable installs | Manual `uv pip install -e` everywhere |
 | **Documentation** | Integrated | Fragmented across repos |
@@ -141,7 +141,7 @@ Three scripts coordinate the workspace:
    - Version compatibility management
 
 2. **Initial Clone Time**
-   - 13+ `git clone` operations
+   - 19 `git clone` operations
    - Though automated, takes longer than one clone
    - Network-dependent
 
@@ -198,7 +198,7 @@ The meta-repository pattern requires:
 ## Real-World Example
 
 provide-workspace manages:
-- 13+ repositories
+- 19 repositories
 - 3 architectural layers
 - Independent release cycles
 - Cross-language tooling (Python + Terraform)

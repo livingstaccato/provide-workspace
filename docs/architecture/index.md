@@ -50,16 +50,21 @@ See [Meta-Repository Pattern](meta-repository/) for detailed comparison with alt
 :   Must manage inter-package dependencies and compatibility.
 
 **Initial Setup Time**
-:   Longer clone time (13+ repositories) but automated with bootstrap script.
+:   Longer clone time (19 repositories) but automated with bootstrap script.
 
 ## Package Organization
 
-The ecosystem uses a three-layer architecture. For detailed information about what each package does, see the [Foundry Architecture](https://foundry.provide.io/foundry/architecture/).
+The ecosystem uses a four-layer architecture. For detailed information about what each package does, see the [Foundry Architecture](https://foundry.provide.io/foundry/architecture/).
 
 **From a workspace perspective**, the layers determine installation order and development workflow:
 
 ```
 ┌─────────────────────────────────────┐
+│        Providers Layer              │
+│  Depends on Tools+Framework         │
+└──────────────┬──────────────────────┘
+               │
+┌──────────────▼──────────────────────┐
 │         Tools Layer                 │
 │  Can depend on Framework+Foundation │
 └──────────────┬──────────────────────┘
@@ -75,7 +80,7 @@ The ecosystem uses a three-layer architecture. For detailed information about wh
 └─────────────────────────────────────┘
 ```
 
-Installation flows bottom-up (Foundation → Framework → Tools). Changes propagate top-down (Foundation changes affect all layers).
+Installation flows bottom-up (Foundation → Framework → Tools → Providers). Changes propagate top-down (Foundation changes affect all layers).
 
 See [Package Layers](layers/) for dependency details and [wrknv Integration](wrknv-integration/) for how workspace configuration works.
 
@@ -97,6 +102,8 @@ provide-workspace/
 └── README.md
 
 ../                         # Sibling directories
+├── bfiles/                # Tools packages
+├── ci-tooling/            # Shared CI workflows
 ├── provide-foundation/     # Foundation packages
 ├── provide-testkit/
 ├── pyvider/                # Framework packages
@@ -105,11 +112,14 @@ provide-workspace/
 ├── pyvider-rpcplugin/
 ├── pyvider-components/
 ├── flavorpack/             # Tools packages
+├── messometer/
 ├── wrknv/
 ├── plating/
 ├── tofusoup/
 ├── supsrc/
-└── provide-foundry/        # Documentation hub
+├── provide-foundry/        # Documentation hub
+├── terraform-provider-pyvider/
+└── terraform-provider-tofusoup/
 ```
 
 ## Development Workflow

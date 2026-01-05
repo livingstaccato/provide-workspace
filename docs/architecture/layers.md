@@ -12,13 +12,23 @@ The provide.io ecosystem is organized in three layers based on **dependencies**.
 
 For detailed information about what each package **does**, see the [Foundry Architecture](https://foundry.provide.io/foundry/architecture/).
 
-## Three-Layer Architecture
+## Four-Layer Architecture
 
 ```
 ┌────────────────────────────────────┐
+│     🚀 Providers Layer             │
+│                                     │
+│  terraform-provider-pyvider,       │
+│  terraform-provider-tofusoup       │
+│                                     │
+│  Depends on Tools+Framework         │
+└────────────────┬───────────────────┘
+                 │ depends on
+┌────────────────▼───────────────────┐
 │        🛠️ Tools Layer              │
 │                                     │
-│  flavorpack, wrknv, plating,       │
+│  bfiles, ci-tooling, flavorpack,   │
+│  messometer, wrknv, plating,       │
 │  tofusoup, supsrc                  │
 │                                     │
 │  Can depend on Framework+Foundation │
@@ -99,11 +109,11 @@ uv run pytest tests/test_schema_extraction.py
 
 ### 🛠️ Tools Layer
 
-**Packages**: flavorpack, wrknv, plating, tofusoup, supsrc
+**Packages**: bfiles, ci-tooling, flavorpack, messometer, wrknv, plating, tofusoup, supsrc
 
 **Dependencies**: Can use both Foundation and Framework layers
 
-**Installation Order**: Last (may depend on both other layers)
+**Installation Order**: Before Providers (may depend on both other layers)
 
 **Change Impact**: LOW - tools are typically end-user facing
 
@@ -119,18 +129,38 @@ cd flavorpack/
 # plating doesn't import tofusoup
 ```
 
+### 🚀 Providers Layer
+
+**Packages**: terraform-provider-pyvider, terraform-provider-tofusoup
+
+**Dependencies**: Framework + selected tools (plating, flavorpack, tofusoup)
+
+**Installation Order**: After Tools (providers sit at the top)
+
+**Change Impact**: LOW - providers are end-user deliverables
+
+**Development Pattern**:
+```bash
+# Providers depend on framework + tooling
+cd terraform-provider-pyvider/
+# Can import from pyvider and provide.foundation
+# Can use plating/flavorpack workflows when needed
+```
+
 ## Dependency Rules
 
 ### Allowed Dependencies
 
 ```
-Tools ──→ Framework ──→ Foundation
-  │          │             │
-  └──────────┴─────────────┘
-     (Can skip layers)
+Providers ──→ Tools ──→ Framework ──→ Foundation
+    │           │           │           │
+    └───────────┴───────────┴───────────┘
+          (Can skip layers)
 ```
 
 **Valid**:
+- Providers → Tools → Framework → Foundation
+- Providers → Framework → Foundation (skip Tools when not needed)
 - Tools → Foundation (skip Framework)
 - Tools → Framework → Foundation
 - Framework → Foundation
@@ -138,8 +168,11 @@ Tools ──→ Framework ──→ Foundation
 **Invalid**:
 - Foundation → Framework (upward dependency)
 - Foundation → Tools (upward dependency)
+- Foundation → Providers (upward dependency)
 - Framework → Tools (sideways dependency)
+- Framework → Providers (sideways dependency)
 - Tools ↔ Tools (peer dependencies)
+- Tools → Providers (sideways dependency)
 
 ### Why These Rules?
 
@@ -168,11 +201,18 @@ uv pip install -e ../pyvider           # depends on pyvider-cty
 uv pip install -e ../pyvider-components # depends on all above
 
 # 3. Tools Layer (depends on Foundation, optionally Framework)
+uv pip install -e ../bfiles
+uv pip install -e ../ci-tooling
 uv pip install -e ../flavorpack
+uv pip install -e ../messometer
 uv pip install -e ../wrknv
 uv pip install -e ../plating
 uv pip install -e ../tofusoup
 uv pip install -e ../supsrc
+
+# 4. Providers Layer (depends on Framework, tooling)
+uv pip install -e ../terraform-provider-pyvider
+uv pip install -e ../terraform-provider-tofusoup
 ```
 
 **Why this order matters**: Later packages import earlier packages. Installing out of order causes import errors.

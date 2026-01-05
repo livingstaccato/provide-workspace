@@ -14,6 +14,8 @@ ORG="provide-io"
 
 # List of repositories to clone
 REPOS=(
+    "bfiles"
+    "ci-tooling"
     "provide-foundation"
     "provide-testkit"
     "pyvider"
@@ -22,12 +24,14 @@ REPOS=(
     "pyvider-rpcplugin"
     "pyvider-components"
     "flavorpack"
+    "messometer"
     "wrknv"
     "plating"
     "tofusoup"
     "supsrc"
     "provide-foundry"
     "terraform-provider-pyvider"
+    "terraform-provider-tofusoup"
 )
 
 # Parse command line arguments
