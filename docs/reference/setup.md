@@ -18,7 +18,7 @@ Run `./scripts/setup.sh --help` for options.
 
 1. Creates `.venv/` virtual environment
 2. Installs packages in dependency order (Foundation → Framework → Tools)
-3. Uses editable installs (`uv pip install -e`)
+3. Uses editable installs (`uv add --editable`)
 4. Installs development dependencies
 
 ## See Also

@@ -152,7 +152,7 @@ Infrastructure
 All packages share a single virtual environment at `provide-workspace/.venv`:
 
 - Located at workspace root
-- Packages installed in editable mode with `uv pip install -e`
+- Packages installed in editable mode with `uv add --editable`
 - Changes to any package immediately visible to others
 - Separate from individual project `workenv/` directories
 
@@ -435,7 +435,7 @@ source .venv/bin/activate
 2. Install doc dependencies:
    ```bash
    cd provide-foundry/
-   uv pip install -e ".[docs]"
+   uv add --editable ".[docs]"
    ```
 
 ### Permission Denied on Scripts

@@ -68,7 +68,7 @@ Individual packages using `wrknv` or manual `uv venv`:
 cd pyvider/
 uv venv workenv/
 source workenv/bin/activate
-uv pip install -e ".[dev]"
+uv add --editable ".[dev]"
 ```
 
 ### Contains
@@ -163,7 +163,7 @@ Why? pyvider-cty has minimal dependencies, can work standalone
 cd pyvider-cty/
 uv venv workenv/
 source workenv/bin/activate
-uv pip install -e ".[dev]"
+uv add --editable ".[dev]"
 # ... make changes and test ...
 pytest
 ```
@@ -185,7 +185,7 @@ cd my-provider/
 cd my-provider/
 uv venv workenv/
 source workenv/bin/activate
-uv pip install -e "."
+uv add --editable "."
 # Verify works with just declared dependencies
 ```
 
@@ -246,7 +246,7 @@ dependencies = [
 rm -rf workenv/
 uv venv workenv/
 source workenv/bin/activate
-uv pip install -e ".[dev]"
+uv add --editable ".[dev]"
 ```
 
 ### Pitfall 3: Changes Not Reflected
@@ -258,7 +258,7 @@ uv pip install -e ".[dev]"
 **Solution**: Install in editable mode:
 ```bash
 # Instead of: uv add .
-uv pip install -e "."  # Note the -e flag
+uv add --editable "."  # Note the -e flag
 ```
 
 ## Configuration Files

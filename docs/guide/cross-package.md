@@ -16,7 +16,7 @@ uv run pytest tests/test_logging.py
 
 ## How It Works
 
-Editable installs (`uv pip install -e`) make changes immediately available without reinstall.
+Editable installs (`uv add --editable`) make changes immediately available without reinstall.
 
 ## See Also
 

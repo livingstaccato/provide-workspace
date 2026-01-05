@@ -190,29 +190,29 @@ The workspace setup script installs packages in dependency order:
 
 ```bash
 # 1. Foundation Layer (no dependencies)
-uv pip install -e ../provide-foundation
-uv pip install -e ../provide-testkit
+uv add --editable ../provide-foundation
+uv add --editable ../provide-testkit
 
 # 2. Framework Layer (depends on Foundation)
-uv pip install -e ../pyvider-cty
-uv pip install -e ../pyvider-hcl      # depends on pyvider-cty
-uv pip install -e ../pyvider-rpcplugin
-uv pip install -e ../pyvider           # depends on pyvider-cty
-uv pip install -e ../pyvider-components # depends on all above
+uv add --editable ../pyvider-cty
+uv add --editable ../pyvider-hcl      # depends on pyvider-cty
+uv add --editable ../pyvider-rpcplugin
+uv add --editable ../pyvider           # depends on pyvider-cty
+uv add --editable ../pyvider-components # depends on all above
 
 # 3. Tools Layer (depends on Foundation, optionally Framework)
-uv pip install -e ../bfiles
-uv pip install -e ../ci-tooling
-uv pip install -e ../flavorpack
-uv pip install -e ../messometer
-uv pip install -e ../wrknv
-uv pip install -e ../plating
-uv pip install -e ../tofusoup
-uv pip install -e ../supsrc
+uv add --editable ../bfiles
+uv add --editable ../ci-tooling
+uv add --editable ../flavorpack
+uv add --editable ../messometer
+uv add --editable ../wrknv
+uv add --editable ../plating
+uv add --editable ../tofusoup
+uv add --editable ../supsrc
 
 # 4. Providers Layer (depends on Framework, tooling)
-uv pip install -e ../terraform-provider-pyvider
-uv pip install -e ../terraform-provider-tofusoup
+uv add --editable ../terraform-provider-pyvider
+uv add --editable ../terraform-provider-tofusoup
 ```
 
 **Why this order matters**: Later packages import earlier packages. Installing out of order causes import errors.
