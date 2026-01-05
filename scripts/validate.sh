@@ -111,6 +111,8 @@ echo
 # Check repositories
 echo "Checking repositories..."
 REPOS=(
+    "bfiles"
+    "ci-tooling"
     "provide-foundation"
     "provide-testkit"
     "pyvider"
@@ -119,11 +121,18 @@ REPOS=(
     "pyvider-rpcplugin"
     "pyvider-components"
     "flavorpack"
+    "messometer"
     "wrknv"
     "plating"
     "tofusoup"
     "supsrc"
     "provide-foundry"
+    "terraform-provider-pyvider"
+    "terraform-provider-tofusoup"
+)
+
+NON_PYTHON_REPOS=(
+    "ci-tooling"
 )
 
 MISSING_REPOS=0
@@ -149,6 +158,12 @@ if [[ "$VIRTUAL_ENV" == *"provide-workspace/.venv"* ]]; then
 
     for repo in "${REPOS[@]}"; do
         if [ -d "$repo" ]; then
+            for non_python in "${NON_PYTHON_REPOS[@]}"; do
+                if [ "$repo" = "$non_python" ]; then
+                    success "$repo present (non-Python repo)"
+                    continue 2
+                fi
+            done
             # Try to import the package
             PACKAGE_NAME=$(echo "$repo" | sed 's/-/_/g')
             if python3 -c "import $PACKAGE_NAME" 2>/dev/null || \
