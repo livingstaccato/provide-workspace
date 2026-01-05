@@ -39,14 +39,12 @@ fi
 echo -e "${GREEN}Python $PYTHON_VERSION OK${NC}"
 
 if ! command -v uv &> /dev/null; then
-    echo -e "${YELLOW}Warning: uv is not installed${NC}"
+    echo -e "${RED}Error: uv is not installed${NC}"
     echo "Install uv with: curl -LsSf https://astral.sh/uv/install.sh | sh"
-    echo "Falling back to pip..."
-    USE_UV=false
-else
-    echo -e "${GREEN}uv OK${NC}"
-    USE_UV=true
+    exit 1
 fi
+
+echo -e "${GREEN}uv OK${NC}"
 
 echo
 
@@ -57,11 +55,7 @@ if [ -d ".venv" ]; then
     echo -e "${YELLOW}.venv already exists, skipping creation${NC}"
 else
     echo "Creating workspace virtual environment..."
-    if $USE_UV; then
-        uv venv
-    else
-        python3 -m venv .venv
-    fi
+    uv venv
     echo -e "${GREEN}Virtual environment created${NC}"
 fi
 
@@ -74,17 +68,10 @@ source .venv/bin/activate
 echo "Installing wrknv..."
 if [ -d "wrknv" ]; then
     cd "$WORKSPACE_ROOT/wrknv"
-    if $USE_UV; then
-        uv pip install -e . || {
-            echo -e "${RED}Failed to install wrknv${NC}"
-            exit 1
-        }
-    else
-        pip install -e . || {
-            echo -e "${RED}Failed to install wrknv${NC}"
-            exit 1
-        }
-    fi
+    uv sync || {
+        echo -e "${RED}Failed to install wrknv${NC}"
+        exit 1
+    }
     echo -e "${GREEN}wrknv installed${NC}"
 else
     echo -e "${RED}Error: wrknv not found. Run ./scripts/bootstrap.sh first.${NC}"
