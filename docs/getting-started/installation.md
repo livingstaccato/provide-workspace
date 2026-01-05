@@ -76,7 +76,7 @@ The setup script installs all packages in editable mode:
 
 **What it does:**
 
-- Detects if `uv` or `pip` is available
+- Detects if `uv` is available
 - Creates a shared virtual environment at `.venv/`
 - Installs all packages in dependency order with editable installs
 - Configures the environment for cross-package development

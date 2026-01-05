@@ -22,4 +22,4 @@ Editable installs (`uv pip install -e`) make changes immediately available witho
 
 - [Development Workflow](workflow/)
 - [Package Layers](../architecture/layers/)
-- [Editable Installs](https://pip.pypa.io/en/stable/topics/local-project-installs/#editable-installs)
+- [uv Documentation](https://docs.astral.sh/uv/)
