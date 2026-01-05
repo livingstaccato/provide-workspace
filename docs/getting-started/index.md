@@ -13,7 +13,7 @@ This section guides you through setting up a complete provide.io development env
 
 ## Overview
 
-provide-workspace sets up a **unified development workspace** for all 13+ provide.io packages:
+provide-workspace sets up a **unified development workspace** for all 19 provide.io packages:
 
 ```bash
 # Three commands to complete setup

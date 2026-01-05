@@ -59,7 +59,7 @@ uv run pytest tests/ -k "test_version"
 
 ## What You Have Now
 
-- **13+ repositories** cloned as siblings to `provide-workspace/`
+- **19 repositories** cloned as siblings to `provide-workspace/`
 - **Shared `.venv`** with all packages installed in editable mode
 - **Cross-package development** enabled - changes in one package immediately available in others
 

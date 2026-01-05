@@ -4,7 +4,7 @@ Understanding package organization from a workspace development perspective.
 
 ## Overview
 
-The provide.io ecosystem is organized in three layers based on **dependencies**. This layering determines:
+The provide.io ecosystem is organized in four layers based on **dependencies**. This layering determines:
 - Installation order (bottom-up)
 - Change propagation (top-down)
 - Development workflows

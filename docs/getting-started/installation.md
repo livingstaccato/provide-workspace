@@ -21,7 +21,7 @@ This creates the workspace root directory.
 
 ### Step 2: Bootstrap the Workspace
 
-The bootstrap script clones all 13+ provide.io ecosystem repositories:
+The bootstrap script clones all 19 provide.io ecosystem repositories:
 
 ```bash
 ./scripts/bootstrap.sh
@@ -187,7 +187,7 @@ After installation, verify the setup:
 
 ```bash
 # Check that packages are installed in editable mode
-pip list | grep provide
+uv pip list | grep provide
 # Should show paths like: /Users/you/provide-workspace/provide-foundation
 
 # Test an import

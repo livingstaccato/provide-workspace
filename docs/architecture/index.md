@@ -231,7 +231,7 @@ Developers can:
 
 | Feature | provide-workspace | Manual Individual |
 |---------|-----------------|-------------------|
-| Setup Time | 3 commands | 13+ clone + setup commands |
+| Setup Time | 3 commands | 19 clone + setup commands |
 | Cross-Package Dev | Seamless | Manual linking required |
 | Consistency | Enforced by scripts | Manual |
 | Documentation | Integrated | Fragmented |

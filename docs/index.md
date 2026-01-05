@@ -8,14 +8,14 @@
 
 ## Overview
 
-`provide-workspace` is the **official workspace management solution** for developing with the provide.io ecosystem. It orchestrates all 13+ repositories across three architectural layers (Foundation, Framework, Tools), providing a unified development environment with a single command.
+`provide-workspace` is the **official workspace management solution** for developing with the provide.io ecosystem. It orchestrates all 19 repositories across four architectural layers (Foundation, Framework, Tools, Providers), providing a unified development environment with a single command.
 
 Unlike traditional monorepos, provide-workspace uses a **meta-repository pattern** - each package maintains its own repository while the workspace provides coordination, shared tooling, and integrated development workflows.
 
 ## Why provide-workspace?
 
 **Single-Command Setup**
-:   Clone all 13+ repositories, install dependencies, and configure your development environment with three commands.
+:   Clone all 19 repositories, install dependencies, and configure your development environment with three commands.
 
 **Unified Development**
 :   Work across multiple packages with editable installs, shared virtual environment, and integrated testing.
@@ -93,7 +93,7 @@ provide-workspace/
     ├── wrknv/
     ├── plating/
     ├── tofusoup/
-    └── ... (13+ repositories)
+    └── ... (19 repositories)
 ```
 
 ## How It Works

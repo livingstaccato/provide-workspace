@@ -25,7 +25,7 @@ Unified development across all ecosystem packages.
 ```
 
 ### Contains
-- All 13+ ecosystem packages in editable mode
+- All 19 ecosystem packages in editable mode
 - Shared dependencies
 - Development tools (pytest, ruff, mypy, etc.)
 
@@ -35,7 +35,7 @@ Unified development across all ecosystem packages.
 - Full ecosystem work
 - Documentation building
 
-###Example
+### Example
 ```bash
 # Activate workspace
 cd provide-workspace/
@@ -48,7 +48,7 @@ python -c "import pyvider"              # Works!
 python -c "import flavor"               # Works!
 
 # All packages available
-pip list | grep -E '(provide|pyvider|flavor)'
+uv pip list | grep -E '(provide|pyvider|flavor)'
 ```
 
 ## The Workenv Environment
@@ -95,7 +95,7 @@ python -c "import provide.foundation"  # Works (dependency)
 python -c "import flavor"               # Fails! (not a dependency)
 
 # Minimal package list
-pip list | grep -E '(provide|pyvider|flavor)'
+uv pip list | grep -E '(provide|pyvider|flavor)'
 # Only shows: pyvider, provide-foundation, pyvider-cty
 ```
 
@@ -105,7 +105,7 @@ pip list | grep -E '(provide|pyvider|flavor)'
 |--------|---------------------|----------------------|
 | **Location** | `provide-workspace/.venv/` | `<package>/workenv/` |
 | **Scope** | All ecosystem packages | Single package |
-| **Packages** | 13+ packages | 1 package + dependencies |
+| **Packages** | 19 packages | 1 package + dependencies |
 | **Setup** | `./scripts/setup.sh` | `uv venv workenv/` |
 | **Use Case** | Cross-package dev | Isolated package dev |
 | **Dependencies** | Everything | Only what package needs |

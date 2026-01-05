@@ -4,7 +4,7 @@ Frequently asked questions about provide-workspace.
 
 ## What is provide-workspace?
 
-Workspace manager for the provide.io ecosystem. It coordinates 13+ repositories for unified development.
+Workspace manager for the provide.io ecosystem. It coordinates 19 repositories for unified development.
 
 ## Do I need provide-workspace?
 

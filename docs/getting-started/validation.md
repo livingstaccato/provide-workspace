@@ -88,7 +88,7 @@ Package Import Checks:
 python3 -c "import pyvider; print(pyvider.__file__)"
 
 # Check if installed in editable mode
-pip list | grep pyvider
+uv pip list | grep pyvider
 # Should show path: /Users/you/provide-workspace/pyvider
 ```
 
@@ -232,7 +232,7 @@ ls ../provide-foundation/
 ./scripts/bootstrap.sh
 
 # 5. Verify installation
-pip list | grep foundation
+uv pip list | grep foundation
 ```
 
 ### Circular Import
@@ -286,7 +286,7 @@ python3 --version
 which python3
 # Should point to: /path/to/provide-workspace/.venv/bin/python3
 
-pip list | head -n 20
+uv pip list | head -n 20
 # Should show provide-* and pyvider-* packages
 ```
 
@@ -318,7 +318,7 @@ EOF
 ### Check Editable Installs
 
 ```bash
-pip list -e
+uv pip list -e
 # Should show paths to local repositories
 ```
 

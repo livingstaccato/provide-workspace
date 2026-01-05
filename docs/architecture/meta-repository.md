@@ -199,7 +199,7 @@ The meta-repository pattern requires:
 
 provide-workspace manages:
 - 19 repositories
-- 3 architectural layers
+- 4 architectural layers
 - Independent release cycles
 - Cross-language tooling (Python + Terraform)
 - Shared development environment
