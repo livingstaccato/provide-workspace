@@ -34,4 +34,4 @@ source .venv/bin/activate
 
 ## Documentation Status
 
-For setup verification, see [Validation Guide](../getting-started/validation/).
+For setup verification, see [Validation Guide](../getting-started/validation.md).

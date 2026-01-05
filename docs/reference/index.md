@@ -6,9 +6,9 @@ Detailed documentation for provide-workspace management scripts.
 
 provide-workspace provides three core scripts:
 
-- **[bootstrap.sh](bootstrap/)** - Clone all ecosystem repositories
-- **[setup.sh](setup/)** - Install dependencies and configure environment
-- **[validate.sh](validate/)** - Verify workspace setup
+- **[bootstrap.sh](bootstrap.md)** - Clone all ecosystem repositories
+- **[setup.sh](setup.md)** - Install dependencies and configure environment
+- **[validate.sh](validate.md)** - Verify workspace setup
 
 ## Quick Reference
 
@@ -25,11 +25,11 @@ provide-workspace provides three core scripts:
 
 ## Configuration
 
-See [Configuration Reference](configuration/) for `wrknv.toml` format and options.
+See [Configuration Reference](configuration.md) for `wrknv.toml` format and options.
 
 ## Documentation Status
 
 📝 Detailed script documentation is in progress. For now, see:
 - Scripts have inline comments and `--help` options
-- [Development Setup](../getting-started/installation/) for usage examples
+- [Development Setup](../getting-started/installation.md) for usage examples
 - Script source code in `scripts/` directory

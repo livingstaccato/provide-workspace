@@ -17,5 +17,5 @@ python3 --version  # Must be 3.11+
 
 ## See Also
 
-- [Validation Guide](../getting-started/validation/)
-- [Common Issues](common/)
+- [Validation Guide](../getting-started/validation.md)
+- [Common Issues](common.md)

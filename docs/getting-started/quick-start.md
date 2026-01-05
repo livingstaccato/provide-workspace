@@ -11,7 +11,7 @@ Ensure you have:
 - Git
 - 5GB free disk space
 
-See [full prerequisites](prerequisites/) if any are missing.
+See [full prerequisites](prerequisites.md) if any are missing.
 
 ## Setup (3 Commands)
 
@@ -180,10 +180,10 @@ chmod +x scripts/*.sh
 
 ## Need More Details?
 
-- **[Installation Guide](installation/)** - Detailed step-by-step instructions
-- **[Validation Guide](validation/)** - Understanding validation checks
+- **[Installation Guide](installation.md)** - Detailed step-by-step instructions
+- **[Validation Guide](validation.md)** - Understanding validation checks
 - **[Development Workflow](../guide/workflow/)** - How to work with the workspace
-- **[Troubleshooting](../troubleshooting/common/)** - Solutions to common issues
+- **[Troubleshooting](../troubleshooting/common.md)** - Solutions to common issues
 
 ## One-Liner Setup
 

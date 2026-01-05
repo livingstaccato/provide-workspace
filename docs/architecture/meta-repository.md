@@ -208,6 +208,6 @@ This would be difficult in a monorepo (too many unrelated changes) or individual
 
 ## Next Steps
 
-- **[Package Layers](layers/)** - How packages depend on each other
-- **[wrknv Integration](wrknv-integration/)** - How wrknv enables the workspace
-- **[Workspace vs Workenv](workspace-vs-workenv/)** - Different environment types
+- **[Package Layers](layers.md)** - How packages depend on each other
+- **[wrknv Integration](wrknv-integration.md)** - How wrknv enables the workspace
+- **[Workspace vs Workenv](workspace-vs-workenv.md)** - Different environment types

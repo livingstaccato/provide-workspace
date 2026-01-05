@@ -4,7 +4,7 @@ Complete step-by-step guide for setting up the provide-workspace workspace.
 
 ## Prerequisites
 
-Before starting, ensure you have all [required tools](prerequisites/) installed.
+Before starting, ensure you have all [required tools](prerequisites.md) installed.
 
 ## Installation Steps
 
@@ -179,7 +179,7 @@ All checks passed! ✓
 Your provide.io development workspace is ready.
 ```
 
-If any checks fail, see [Validation](validation/) for troubleshooting.
+If any checks fail, see [Validation](validation.md) for troubleshooting.
 
 ## Verification
 
@@ -205,8 +205,8 @@ Your provide-workspace workspace is now ready!
 ### Learn the Basics
 
 - **[Development Workflow](../guide/workflow/)** - Making changes and testing
-- **[Cross-Package Development](../guide/cross-package/)** - Working across packages
-- **[Architecture](../architecture/index/)** - Understanding the workspace structure
+- **[Cross-Package Development](../guide/cross-package.md)** - Working across packages
+- **[Architecture](../architecture/index.md)** - Understanding the workspace structure
 
 ### Start Developing
 
@@ -277,7 +277,7 @@ done
 
 ## Troubleshooting
 
-See [Common Issues](../troubleshooting/common/) for solutions to common problems:
+See [Common Issues](../troubleshooting/common.md) for solutions to common problems:
 
 - [Import Errors](../troubleshooting/environment.md#import-errors)
 - [Virtual Environment Issues](../troubleshooting/environment.md#virtual-environment-conflicts)
@@ -318,7 +318,7 @@ REPOS="provide-foundation pyvider" ./scripts/bootstrap.sh
 
 If you encounter issues:
 
-1. Check [Troubleshooting](../troubleshooting/common/)
+1. Check [Troubleshooting](../troubleshooting/common.md)
 2. Review package-specific `CLAUDE.md` and `README.md` files
 3. Open an issue in [provide-workspace](https://github.com/provide-io/provide-workspace/issues)
 4. Ask in GitHub Discussions

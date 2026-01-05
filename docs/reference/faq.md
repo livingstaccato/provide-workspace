@@ -26,5 +26,5 @@ Yes! Clone only what you need. provide-workspace is optional.
 ## More Questions?
 
 For now, see:
-- [Meta-Repository Pattern](../architecture/meta-repository/)
-- [Getting Started](../getting-started/index/)
+- [Meta-Repository Pattern](../architecture/meta-repository.md)
+- [Getting Started](../getting-started/index.md)

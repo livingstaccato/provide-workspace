@@ -24,5 +24,5 @@ repo = "https://github.com/provide-io/pyvider.git"
 
 ## See Also
 
-- [wrknv Integration](../architecture/wrknv-integration/)
+- [wrknv Integration](../architecture/wrknv-integration.md)
 - [wrknv Documentation](https://foundry.provide.io/wrknv/)

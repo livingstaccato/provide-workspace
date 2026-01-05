@@ -23,5 +23,5 @@ Run `./scripts/setup.sh --help` for options.
 
 ## See Also
 
-- [Installation Guide](../getting-started/installation/)
-- [Package Layers](../architecture/layers/)
+- [Installation Guide](../getting-started/installation.md)
+- [Package Layers](../architecture/layers.md)

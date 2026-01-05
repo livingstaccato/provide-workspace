@@ -6,10 +6,10 @@ Welcome to provide-workspace, the workspace manager for the provide.io ecosystem
 
 This section guides you through setting up a complete provide.io development environment:
 
-1. **[Prerequisites](prerequisites/)** - Required tools and system requirements
-2. **[Installation](installation/)** - Step-by-step setup process
-3. **[Quick Start](quick-start/)** - Fast-track setup (3 commands)
-4. **[Validation](validation/)** - Verify your environment is working
+1. **[Prerequisites](prerequisites.md)** - Required tools and system requirements
+2. **[Installation](installation.md)** - Step-by-step setup process
+3. **[Quick Start](quick-start.md)** - Fast-track setup (3 commands)
+4. **[Validation](validation.md)** - Verify your environment is working
 
 ## Overview
 
@@ -51,8 +51,8 @@ Plus Terraform providers, CI tooling, and documentation hub.
 
 ## Next Steps
 
-New to the ecosystem? Start with [Prerequisites](prerequisites/) to ensure you have required tools.
+New to the ecosystem? Start with [Prerequisites](prerequisites.md) to ensure you have required tools.
 
-Already have the tools? Jump to [Quick Start](quick-start/) for immediate setup.
+Already have the tools? Jump to [Quick Start](quick-start.md) for immediate setup.
 
-Want detailed explanations? Follow the [Installation](installation/) guide step-by-step.
+Want detailed explanations? Follow the [Installation](installation.md) guide step-by-step.

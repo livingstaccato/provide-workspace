@@ -128,19 +128,19 @@ GitHub Actions workflows test the bootstrap process to ensure new contributors c
 
 <div class="grid cards" markdown>
 
--   :material-rocket-launch: **[Getting Started](getting-started/index/)**
+-   :material-rocket-launch: **[Getting Started](getting-started/index.md)**
 
     ---
 
     Prerequisites, installation steps, and validation workflows
 
--   :material-sitemap: **[Architecture](architecture/index/)**
+-   :material-sitemap: **[Architecture](architecture/index.md)**
 
     ---
 
     Meta-repository pattern, package layers, and workspace concepts
 
--   :material-script-text: **[Scripts Reference](reference/index/)**
+-   :material-script-text: **[Scripts Reference](reference/index.md)**
 
     ---
 
@@ -158,7 +158,7 @@ GitHub Actions workflows test the bootstrap process to ensure new contributors c
 
     Running tests, test structure, and CI/CD integration
 
--   :material-help-circle: **[Troubleshooting](troubleshooting/common/)**
+-   :material-help-circle: **[Troubleshooting](troubleshooting/common.md)**
 
     ---
 
@@ -173,16 +173,16 @@ GitHub Actions workflows test the bootstrap process to ensure new contributors c
 
 Think of wrknv as Make or Task, and provide-workspace as a specific Makefile configured for the provide.io ecosystem. You can use wrknv to create your own workspaces, and provide-workspace shows you how.
 
-See [provide-workspace vs wrknv](reference/vs-wrknv/) for detailed comparison.
+See [provide-workspace vs wrknv](reference/vs-wrknv.md) for detailed comparison.
 
 ## Next Steps
 
 New to provide.io? Start here:
 
-1. **[Prerequisites](getting-started/prerequisites/)** - Ensure you have required tools
-2. **[Installation](getting-started/installation/)** - Step-by-step setup guide
+1. **[Prerequisites](getting-started/prerequisites.md)** - Ensure you have required tools
+2. **[Installation](getting-started/installation.md)** - Step-by-step setup guide
 3. **[Development Workflow](guide/workflow/)** - Learn common development patterns
-4. **[Architecture](architecture/index/)** - Understand the meta-repository pattern
+4. **[Architecture](architecture/index.md)** - Understand the meta-repository pattern
 
 ## Support
 

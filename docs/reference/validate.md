@@ -23,5 +23,5 @@ Run `./scripts/validate.sh --help` for options.
 
 ## See Also
 
-- [Validation Guide](../getting-started/validation/)
-- [Troubleshooting](../troubleshooting/common/)
+- [Validation Guide](../getting-started/validation.md)
+- [Troubleshooting](../troubleshooting/common.md)

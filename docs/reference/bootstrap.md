@@ -23,5 +23,5 @@ Run `./scripts/bootstrap.sh --help` for options.
 
 ## See Also
 
-- [Installation Guide](../getting-started/installation/)
-- [wrknv Integration](../architecture/wrknv-integration/)
+- [Installation Guide](../getting-started/installation.md)
+- [wrknv Integration](../architecture/wrknv-integration.md)

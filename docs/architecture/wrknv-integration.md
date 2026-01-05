@@ -313,5 +313,5 @@ post_install = "scripts/post_install.sh"
 ## Next Steps
 
 - **[Development Workflow](../guide/workflow/)** - Working with the workspace
-- **[Configuration Reference](../reference/configuration/)** - wrknv.toml details
+- **[Configuration Reference](../reference/configuration.md)** - wrknv.toml details
 - **[wrknv Documentation](https://foundry.provide.io/wrknv/)** - Full wrknv capabilities

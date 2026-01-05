@@ -17,5 +17,5 @@ uv add dependency-name
 
 ## See Also
 
-- [Package Layers](../architecture/layers/)
+- [Package Layers](../architecture/layers.md)
 - [uv Documentation](https://github.com/astral-sh/uv)

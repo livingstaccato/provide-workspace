@@ -21,4 +21,4 @@ This guide is intentionally brief; see the linked guides below.
 
 ## See Also
 
-- [Configuration Reference](../reference/configuration/)
+- [Configuration Reference](../reference/configuration.md)

@@ -207,7 +207,7 @@ All required tools should display version numbers. If any are missing, install t
 
 ## Next Steps
 
-Once all prerequisites are installed, proceed to [Installation](installation/) for the setup process.
+Once all prerequisites are installed, proceed to [Installation](installation.md) for the setup process.
 
 ## Troubleshooting
 

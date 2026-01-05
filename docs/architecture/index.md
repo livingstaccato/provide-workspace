@@ -20,7 +20,7 @@ provide-workspace uses a **meta-repository pattern** - coordinating multiple ind
 **Shared Virtual Environment**
 :   Single `.venv` at workspace root contains all packages, enabling cross-package development.
 
-See [Meta-Repository Pattern](meta-repository/) for detailed comparison with alternatives.
+See [Meta-Repository Pattern](meta-repository.md) for detailed comparison with alternatives.
 
 ## Why Meta-Repository?
 
@@ -82,7 +82,7 @@ The ecosystem uses a four-layer architecture. For detailed information about wha
 
 Installation flows bottom-up (Foundation → Framework → Tools → Providers). Changes propagate top-down (Foundation changes affect all layers).
 
-See [Package Layers](layers/) for dependency details and [wrknv Integration](wrknv-integration/) for how workspace configuration works.
+See [Package Layers](layers.md) for dependency details and [wrknv Integration](wrknv-integration.md) for how workspace configuration works.
 
 ## Workspace Structure
 
@@ -166,7 +166,7 @@ path = "../provide-testkit"
 # ... more siblings
 ```
 
-See [Configuration](../reference/configuration/) for complete reference.
+See [Configuration](../reference/configuration.md) for complete reference.
 
 ### Package Dependencies
 
@@ -241,19 +241,19 @@ Developers can:
 
 ### Bootstrap Process
 
-See [bootstrap.sh reference](../reference/bootstrap/)
+See [bootstrap.sh reference](../reference/bootstrap.md)
 
 ### Setup Process
 
-See [setup.sh reference](../reference/setup/)
+See [setup.sh reference](../reference/setup.md)
 
 ### Validation Process
 
-See [validate.sh reference](../reference/validate/)
+See [validate.sh reference](../reference/validate.md)
 
 ## Next Steps
 
-- **[Meta-Repository Pattern](meta-repository/)** - Deep dive into the pattern
-- **[Package Layers](layers/)** - Detailed dependency relationships
-- **[Workspace vs Workenv](workspace-vs-workenv/)** - Understanding environments
-- **[wrknv Integration](wrknv-integration/)** - How wrknv enables the workspace
+- **[Meta-Repository Pattern](meta-repository.md)** - Deep dive into the pattern
+- **[Package Layers](layers.md)** - Detailed dependency relationships
+- **[Workspace vs Workenv](workspace-vs-workenv.md)** - Understanding environments
+- **[wrknv Integration](wrknv-integration.md)** - How wrknv enables the workspace

@@ -10,4 +10,4 @@ chmod +x scripts/*.sh
 
 ## See Also
 
-- [Common Issues](common/)
+- [Common Issues](common.md)

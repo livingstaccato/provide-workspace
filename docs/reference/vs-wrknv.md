@@ -40,4 +40,4 @@ Understanding the relationship between the workspace and the tool.
 ## Learn More
 
 - **[wrknv Documentation](https://foundry.provide.io/wrknv/)** - Full wrknv capabilities
-- **[wrknv Integration](../architecture/wrknv-integration/)** - How provide-workspace uses wrknv
+- **[wrknv Integration](../architecture/wrknv-integration.md)** - How provide-workspace uses wrknv

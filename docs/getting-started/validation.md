@@ -10,7 +10,7 @@ The validation script verifies your provide-workspace setup:
 ./scripts/validate.sh
 ```
 
-Run this after [installation](installation/) and whenever you suspect environment issues.
+Run this after [installation](installation.md) and whenever you suspect environment issues.
 
 ## What Gets Validated
 
@@ -351,7 +351,7 @@ export VIRTUAL_ENV="$(pwd)/.venv"
 # If validation passes, exit code is 0
 ```
 
-See [CI/CD Integration](../testing/ci-cd/) for complete CI/CD workflows.
+See [CI/CD Integration](../testing/ci-cd.md) for complete CI/CD workflows.
 
 ## Re-validation
 
@@ -371,4 +371,4 @@ Once validation passes:
 
 - **[Development Workflow](../guide/workflow/)** - Start making changes
 - **[Testing Guide](../testing/index/)** - Run tests across packages
-- **[Architecture](../architecture/index/)** - Understand the workspace structure
+- **[Architecture](../architecture/index.md)** - Understand the workspace structure
