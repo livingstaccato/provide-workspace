@@ -366,4 +366,4 @@ dependencies = [
 
 - **[Meta-Repository Pattern](meta-repository.md)** - Why separate repos?
 - **[Workspace vs Workenv](workspace-vs-workenv.md)** - Different environment types
-- **[Development Workflow](../guide/workflow/)** - Practical development patterns
+- **[Development Workflow](../guide/git-workflow.md)** - Practical development patterns

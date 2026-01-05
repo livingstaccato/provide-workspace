@@ -369,6 +369,6 @@ You should re-run validation:
 
 Once validation passes:
 
-- **[Development Workflow](../guide/workflow/)** - Start making changes
-- **[Testing Guide](../testing/index/)** - Run tests across packages
+- **[Development Workflow](../guide/git-workflow.md)** - Start making changes
+- **[Testing Guide](../testing/running-tests.md)** - Run tests across packages
 - **[Architecture](../architecture/index.md)** - Understand the workspace structure

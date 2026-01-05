@@ -21,5 +21,5 @@ gh pr create
 
 ## See Also
 
-- [Development Workflow](workflow/)
+- [Development Workflow](git-workflow.md)
 - [CLAUDE.md](../../CLAUDE.md) for auto-commit details

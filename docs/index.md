@@ -146,13 +146,13 @@ GitHub Actions workflows test the bootstrap process to ensure new contributors c
 
     Detailed documentation for bootstrap.sh, setup.sh, and validate.sh
 
--   :material-book-open: **[User Guide](guide/workflow/)**
+-   :material-book-open: **[User Guide](guide/git-workflow.md)**
 
     ---
 
     Development workflows, cross-package development, and git strategies
 
--   :material-test-tube: **[Testing](testing/index/)**
+-   :material-test-tube: **[Testing](testing/running-tests.md)**
 
     ---
 
@@ -181,7 +181,7 @@ New to provide.io? Start here:
 
 1. **[Prerequisites](getting-started/prerequisites.md)** - Ensure you have required tools
 2. **[Installation](getting-started/installation.md)** - Step-by-step setup guide
-3. **[Development Workflow](guide/workflow/)** - Learn common development patterns
+3. **[Development Workflow](guide/git-workflow.md)** - Learn common development patterns
 4. **[Architecture](architecture/index.md)** - Understand the meta-repository pattern
 
 ## Support

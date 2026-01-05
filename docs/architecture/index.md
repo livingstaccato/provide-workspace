@@ -142,7 +142,7 @@ graph LR
 4. **Commit in provide-foundation** repository
 5. **Update version** when ready for release
 
-See [Development Workflow](../guide/workflow/) for practical examples.
+See [Development Workflow](../guide/git-workflow.md) for practical examples.
 
 ## Configuration Management
 

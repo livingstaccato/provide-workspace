@@ -20,6 +20,6 @@ Editable installs (`uv pip install -e`) make changes immediately available witho
 
 ## See Also
 
-- [Development Workflow](workflow/)
+- [Development Workflow](git-workflow.md)
 - [Package Layers](../architecture/layers.md)
 - [uv Documentation](https://docs.astral.sh/uv/)

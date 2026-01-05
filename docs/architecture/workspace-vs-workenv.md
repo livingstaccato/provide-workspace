@@ -297,6 +297,6 @@ dependencies = [
 
 ## Next Steps
 
-- **[Development Workflow](../guide/workflow/)** - Practical development patterns
+- **[Development Workflow](../guide/git-workflow.md)** - Practical development patterns
 - **[wrknv Integration](wrknv-integration.md)** - How wrknv manages environments
 - **[Cross-Package Development](../guide/cross-package.md)** - Working across packages

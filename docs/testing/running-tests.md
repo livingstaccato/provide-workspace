@@ -21,4 +21,5 @@ uv run pytest -v
 
 ## See Also
 
-- [Testing Overview](index/)
+- [Test Structure](test-structure.md) - How tests are organized across repos
+- [CI/CD](ci-cd.md) - How tests run in automation

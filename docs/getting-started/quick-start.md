@@ -182,7 +182,7 @@ chmod +x scripts/*.sh
 
 - **[Installation Guide](installation.md)** - Detailed step-by-step instructions
 - **[Validation Guide](validation.md)** - Understanding validation checks
-- **[Development Workflow](../guide/workflow/)** - How to work with the workspace
+- **[Development Workflow](../guide/git-workflow.md)** - How to work with the workspace
 - **[Troubleshooting](../troubleshooting/common.md)** - Solutions to common issues
 
 ## One-Liner Setup

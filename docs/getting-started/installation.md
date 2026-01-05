@@ -204,7 +204,7 @@ Your provide-workspace workspace is now ready!
 
 ### Learn the Basics
 
-- **[Development Workflow](../guide/workflow/)** - Making changes and testing
+- **[Development Workflow](../guide/git-workflow.md)** - Making changes and testing
 - **[Cross-Package Development](../guide/cross-package.md)** - Working across packages
 - **[Architecture](../architecture/index.md)** - Understanding the workspace structure
 
