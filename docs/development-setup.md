@@ -393,8 +393,8 @@ source .venv/bin/activate
 
 **Solution**: Editable installs should work automatically. Verify installation:
 ```bash
-uv pip list | grep pyvider
-# Should show paths like: /Users/you/provide-workspace/pyvider
+uv run python -c "import pyvider, pathlib; print(pathlib.Path(pyvider.__file__).resolve())"
+# Should show a path like: /Users/you/provide-workspace/pyvider
 ```
 
 ### Virtual Environment Conflicts

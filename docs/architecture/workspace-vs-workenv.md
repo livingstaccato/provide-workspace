@@ -48,7 +48,7 @@ python -c "import pyvider"              # Works!
 python -c "import flavor"               # Works!
 
 # All packages available
-uv pip list | grep -E '(provide|pyvider|flavor)'
+uv run python -c "import importlib.metadata as m; print('\\n'.join(sorted(d.metadata['Name'] for d in m.distributions() if any(k in d.metadata['Name'].lower() for k in ('provide','pyvider','flavor')))))"
 ```
 
 ## The Workenv Environment
@@ -95,7 +95,7 @@ python -c "import provide.foundation"  # Works (dependency)
 python -c "import flavor"               # Fails! (not a dependency)
 
 # Minimal package list
-uv pip list | grep -E '(provide|pyvider|flavor)'
+uv run python -c "import importlib.metadata as m; print('\\n'.join(sorted(d.metadata['Name'] for d in m.distributions() if any(k in d.metadata['Name'].lower() for k in ('provide','pyvider','flavor')))))"
 # Only shows: pyvider, provide-foundation, pyvider-cty
 ```
 
@@ -258,7 +258,7 @@ uv add --editable ".[dev]"
 **Solution**: Install in editable mode:
 ```bash
 # Instead of: uv add .
-uv add --editable "."  # Note the -e flag
+uv add --editable "."  # Note the --editable flag
 ```
 
 ## Configuration Files

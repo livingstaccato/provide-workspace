@@ -187,8 +187,8 @@ After installation, verify the setup:
 
 ```bash
 # Check that packages are installed in editable mode
-uv pip list | grep provide
-# Should show paths like: /Users/you/provide-workspace/provide-foundation
+uv run python -c "import provide.foundation, pathlib; print(pathlib.Path(provide.foundation.__file__).resolve())"
+# Should show a path like: /Users/you/provide-workspace/provide-foundation
 
 # Test an import
 python3 -c "import pyvider; print(pyvider.__version__)"
