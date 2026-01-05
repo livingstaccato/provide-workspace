@@ -260,8 +260,8 @@ uv venv
 source .venv/bin/activate
 
 # Install packages in order
-uv add --editable ../package-one
-uv add --editable ../package-two
+uv pip install -e ../package-one
+uv pip install -e ../package-two
 ```
 
 ## wrknv vs provide-workspace
