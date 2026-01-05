@@ -52,7 +52,7 @@ This repository provides the development environment setup for working with the 
 - **Python 3.11+** (required across all packages)
 - **uv** - Modern Python package installer ([install instructions](https://github.com/astral-sh/uv))
 - **Git** - Version control
-- **Go 1.21+** - For some tooling components
+- **Go 1.24+** - For some tooling components
 
 ## Workspace Structure
 

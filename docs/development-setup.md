@@ -42,7 +42,7 @@ Complete guide for setting up the provide.io development workspace.
    make --version
    ```
 
-6. **Go 1.21+** (for some tooling components)
+6. **Go 1.24+** (for some tooling components)
    ```bash
    go version
    ```

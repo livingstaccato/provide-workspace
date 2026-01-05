@@ -147,7 +147,7 @@ make --version
     sudo apt install build-essential
     ```
 
-### 6. Go 1.21+ (For Some Tooling Components)
+### 6. Go 1.24+ (For Some Tooling Components)
 
 Required for certain provider components and tooling.
 
