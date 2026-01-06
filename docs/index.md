@@ -1,9 +1,5 @@
 # provide-workspace
 
-!!! warning "Pre-release"
-    This documentation covers a pre-release. APIs and features may change during the pre-release series.
-
-
 **Workspace manager for the provide.io ecosystem**
 
 ## Overview
