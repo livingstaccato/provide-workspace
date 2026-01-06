@@ -65,14 +65,12 @@ nav:
     - Configuration: reference/configuration.md
 
   - User Guide:
-    - Development Workflow: guide/workflow.md
     - Cross-Package Development: guide/cross-package.md
     - Adding Packages: guide/adding-packages.md
     - Git Workflow: guide/git-workflow.md
     - Dependency Management: guide/dependencies.md
 
   - Testing:
-    - testing/index.md
     - Running Tests: testing/running-tests.md
     - Test Structure: testing/test-structure.md
     - CI/CD: testing/ci-cd.md
